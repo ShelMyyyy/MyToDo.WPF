@@ -1,0 +1,46 @@
+﻿using MyToDo.Main.ViewModels;
+using MyToDo.Main.Views;
+using System.Configuration;
+using System.Data;
+using System.Windows;
+
+namespace MyToDo.Main
+{
+    /// <summary>
+    /// Interaction logic for App.xaml
+    /// </summary>
+    public partial class App : PrismApplication
+    {
+        /// <summary>
+        /// 设置启动窗口
+        /// </summary>
+        /// <returns></returns>
+        protected override Window CreateShell()
+        {
+          return Container.Resolve<MainWindowView>();
+        }
+        /// <summary>
+        /// 用来注册需要的服务
+        /// </summary>
+        /// <param name="containerRegistry"></param>
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+            containerRegistry.RegisterDialog<LoginView,LoginViewModel>();
+        }
+
+        protected override void OnInitialized()
+        {
+            var dialog = Container.Resolve<IDialogService>();
+            dialog.ShowDialog("LoginView", callback =>
+            {
+                if(callback.Result!=ButtonResult.OK)
+                {
+                    Environment.Exit(0);
+                    return;
+                }
+            });
+            base.OnInitialized();
+        }
+    }
+
+}
