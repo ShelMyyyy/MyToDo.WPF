@@ -1,4 +1,5 @@
-﻿using MyToDo.Main.ViewModels;
+﻿using MyToDo.Main.Core.Tools;
+using MyToDo.Main.ViewModels;
 using MyToDo.Main.Views;
 using System.Configuration;
 using System.Data;
@@ -26,6 +27,8 @@ namespace MyToDo.Main
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterDialog<LoginView,LoginViewModel>();
+            containerRegistry.GetContainer().Register<HttpClientTool>(made:Parameters.Of.Type<string>(serviceKey:"webUri"));
+
         }
 
         protected override void OnInitialized()

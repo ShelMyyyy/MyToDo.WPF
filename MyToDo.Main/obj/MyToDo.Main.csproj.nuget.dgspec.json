@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyProjectCode\\MyToDo\\MyToDo.Main\\MyToDo.Main.csproj": {}
+    "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\MyToDo.Main.csproj": {}
   },
   "projects": {
-    "D:\\MyProjectCode\\MyToDo\\MyToDo.Main\\MyToDo.Main.csproj": {
+    "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\MyToDo.Main.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjectCode\\MyToDo\\MyToDo.Main\\MyToDo.Main.csproj",
+        "projectUniqueName": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\MyToDo.Main.csproj",
         "projectName": "MyToDo.Main",
-        "projectPath": "D:\\MyProjectCode\\MyToDo\\MyToDo.Main\\MyToDo.Main.csproj",
+        "projectPath": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\MyToDo.Main.csproj",
         "packagesPath": "C:\\Users\\14120\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjectCode\\MyToDo\\MyToDo.Main\\obj\\",
+        "outputPath": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -54,9 +54,17 @@
               "target": "Package",
               "version": "[5.3.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
+            },
             "Prism.DryIoc": {
               "target": "Package",
               "version": "[9.0.537, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[113.1.0, )"
             }
           },
           "imports": [

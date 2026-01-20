@@ -1,12 +1,19 @@
 ﻿
 
 
+using MyToDo.Main.Core.DTOS;
+using MyToDo.Main.Core.Model;
+using MyToDo.Main.Core.Tools;
+using Newtonsoft.Json;
+using RestSharp;
 using System.Diagnostics;
+using System.Windows;
 
 namespace MyToDo.Main.ViewModels
 {
     public class LoginViewModel : ViewModelBase, IDialogAware
     {
+        private HttpClientTool httpClientTool;
         #region ProPerty
         private int _selectedIndex;
 
@@ -16,17 +23,32 @@ namespace MyToDo.Main.ViewModels
             set => SetProperty(ref _selectedIndex, value);
         }
 
+        private RegisterInfoDto _registerInfoDto;
 
+        public RegisterInfoDto RegisterInfoDto
+        {
+            get => _registerInfoDto;
+            set => SetProperty(ref _registerInfoDto, value);
+        }
+
+        private string _secondPwd;
+
+        public string SecondPwd
+        {
+            get => _secondPwd;
+            set => SetProperty(ref _secondPwd, value);
+        }
         private string _pwd;
 
         public string Pwd
         {
             get => _pwd;
-            set => SetProperty(ref _pwd, value,OnPwdChanged);
+            set => SetProperty(ref _pwd, value, OnPwdChanged);
         }
 
         private void OnPwdChanged()
         {
+
             Debug.WriteLine("========" + Pwd);
         }
         #endregion
@@ -34,6 +56,7 @@ namespace MyToDo.Main.ViewModels
         #region Command
         public DelegateCommand LoginCommand { get; set; }
         public DelegateCommand SwitchPageCommand { get; set; }
+        public DelegateCommand RegistAccountCommand { get; set; }
         #endregion
 
         public LoginViewModel()
@@ -41,7 +64,45 @@ namespace MyToDo.Main.ViewModels
             SelectedIndex = 0;
             LoginCommand = new DelegateCommand(Login);
             SwitchPageCommand = new DelegateCommand(SwitchPage);
+            RegistAccountCommand = new DelegateCommand(RegistAccount);
+            RegisterInfoDto= new RegisterInfoDto(); 
+            httpClientTool = new HttpClientTool();
         }
+
+        private void RegistAccount()
+        {
+            //检查空
+            if (RegisterInfoDto.UserName == null || RegisterInfoDto.AccountName == null || RegisterInfoDto.Password == null)
+            {
+                return;
+            }
+            if (RegisterInfoDto.Password != SecondPwd)
+            {
+                MessageBox.Show("两次输入的密码不一致");
+                return;
+            }
+            var apiRequestModel = new ApiRequestModel();
+            apiRequestModel.Method = Method.Post;
+            apiRequestModel.RequestRoute = "Account/Regist";
+            apiRequestModel.ContentType = "application/json";
+            apiRequestModel.RequestParam = RegisterInfoDto;
+
+            ApiReponseModel apiResponse = httpClientTool.SendRequest(apiRequestModel);
+
+            Debug.WriteLine($"响应: {JsonConvert.SerializeObject(apiResponse)}");
+
+            if (apiResponse.ResultCode == 1)
+            {
+                MessageBox.Show("注册成功");
+                SelectedIndex = 1;
+                return;
+            }
+            else
+            {
+                MessageBox.Show(apiResponse.Msg);
+            }
+        }
+
         /// <summary>
         /// 切换登录和注册界面
         /// </summary>

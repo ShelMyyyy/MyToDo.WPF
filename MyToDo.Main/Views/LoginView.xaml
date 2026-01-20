@@ -64,23 +64,28 @@
                         FontSize="30"
                         DockPanel.Dock="Top" />
                     <TextBox
+                        Text="{Binding RegisterInfoDto.UserName}"
                         Margin="20,10"
                         mt:HintAssist.Hint="请输入姓名"
                         DockPanel.Dock="Top" />
                     <TextBox
+                        Text="{Binding RegisterInfoDto.AccountName}"
                         Margin="20,10"
                         mt:HintAssist.Hint="请输入账号"
                         DockPanel.Dock="Top" />
-                    <TextBox
+                    <PasswordBox
                         Margin="20,10"
                         mt:HintAssist.Hint="请输入密码"
+                        extendProperty:PasswordExtend.PasswordEx="{Binding RegisterInfoDto.Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                         DockPanel.Dock="Top" />
-                    <TextBox
+                    <PasswordBox
                         Margin="20,10"
                         mt:HintAssist.Hint="请再次输入密码"
+                        extendProperty:PasswordExtend.PasswordEx="{Binding SecondPwd, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                         DockPanel.Dock="Top" />
                     <Button
                         Content="注册"
+                        Command="{Binding RegistAccountCommand}"
                         Margin="20,10"
                         DockPanel.Dock="Top" />
                     <Button

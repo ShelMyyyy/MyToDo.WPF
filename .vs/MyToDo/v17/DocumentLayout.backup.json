@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\MyProjectCode\\MyToDo\\",
+  "WorkspaceRootPath": "D:\\MyProjectCode\\MyToDo\\MyToDo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|d:\\myprojectcode\\mytodo\\mytodo.main\\core\\extensions\\passwordextend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|solutionrelative:mytodo.main\\core\\extensions\\passwordextend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|d:\\myprojectcode\\mytodo\\mytodo.main\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|solutionrelative:mytodo.main\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|d:\\myprojectcode\\mytodo\\mytodo.main\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|d:\\myprojectcode\\mytodo\\mytodo\\mytodo.main\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|solutionrelative:mytodo.main\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|d:\\myprojectcode\\mytodo\\mytodo.main\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|solutionrelative:mytodo.main\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|d:\\myprojectcode\\mytodo\\mytodo\\mytodo.main\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|solutionrelative:mytodo.main\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|d:\\myprojectcode\\mytodo\\mytodo.main\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|d:\\myprojectcode\\mytodo\\mytodo\\mytodo.main\\core\\tools\\httpclienttool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|solutionrelative:mytodo.main\\core\\tools\\httpclienttool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|d:\\myprojectcode\\mytodo\\mytodo\\mytodo.main\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|solutionrelative:mytodo.main\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|d:\\myprojectcode\\mytodo\\mytodo\\mytodo.main\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|solutionrelative:mytodo.main\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,41 +30,65 @@
       "DocumentGroups": [
         {
           "DockedWidth": 173,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\MyProjectCode\\MyToDo\\MyToDo.Main\\App.xaml.cs",
-              "RelativeDocumentMoniker": "MyToDo.Main\\App.xaml.cs",
-              "ToolTip": "D:\\MyProjectCode\\MyToDo\\MyToDo.Main\\App.xaml.cs",
-              "RelativeToolTip": "MyToDo.Main\\App.xaml.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAywAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T13:39:35.881Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ViewModelBase.cs",
-              "DocumentMoniker": "D:\\MyProjectCode\\MyToDo\\MyToDo.Main\\ViewModels\\ViewModelBase.cs",
-              "RelativeDocumentMoniker": "MyToDo.Main\\ViewModels\\ViewModelBase.cs",
-              "ToolTip": "D:\\MyProjectCode\\MyToDo\\MyToDo.Main\\ViewModels\\ViewModelBase.cs",
-              "RelativeToolTip": "MyToDo.Main\\ViewModels\\ViewModelBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\App.xaml.cs",
+              "RelativeDocumentMoniker": "MyToDo.Main\\App.xaml.cs",
+              "ToolTip": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\App.xaml.cs",
+              "RelativeToolTip": "MyToDo.Main\\App.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwB0AAAB4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-13T12:55:37.489Z",
+              "WhenOpened": "2026-01-19T12:58:57.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\App.xaml",
+              "RelativeDocumentMoniker": "MyToDo.Main\\App.xaml",
+              "ToolTip": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\App.xaml",
+              "RelativeToolTip": "MyToDo.Main\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-19T12:58:55.858Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "HttpClientTool.cs",
+              "DocumentMoniker": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\Core\\Tools\\HttpClientTool.cs",
+              "RelativeDocumentMoniker": "MyToDo.Main\\Core\\Tools\\HttpClientTool.cs",
+              "ToolTip": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\Core\\Tools\\HttpClientTool.cs",
+              "RelativeToolTip": "MyToDo.Main\\Core\\Tools\\HttpClientTool.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAwDcAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T12:39:42.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "LoginView.xaml",
-              "DocumentMoniker": "D:\\MyProjectCode\\MyToDo\\MyToDo.Main\\Views\\LoginView.xaml",
+              "DocumentMoniker": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\Views\\LoginView.xaml",
               "RelativeDocumentMoniker": "MyToDo.Main\\Views\\LoginView.xaml",
-              "ToolTip": "D:\\MyProjectCode\\MyToDo\\MyToDo.Main\\Views\\LoginView.xaml",
+              "ToolTip": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\Views\\LoginView.xaml",
               "RelativeToolTip": "MyToDo.Main\\Views\\LoginView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-01-14T12:18:28.693Z",
@@ -72,26 +96,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PasswordExtend.cs",
-              "DocumentMoniker": "D:\\MyProjectCode\\MyToDo\\MyToDo.Main\\Core\\Extensions\\PasswordExtend.cs",
-              "RelativeDocumentMoniker": "MyToDo.Main\\Core\\Extensions\\PasswordExtend.cs",
-              "ToolTip": "D:\\MyProjectCode\\MyToDo\\MyToDo.Main\\Core\\Extensions\\PasswordExtend.cs",
-              "RelativeToolTip": "MyToDo.Main\\Core\\Extensions\\PasswordExtend.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAIwCsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T11:54:17.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\MyProjectCode\\MyToDo\\MyToDo.Main\\ViewModels\\LoginViewModel.cs",
+              "DocumentMoniker": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "MyToDo.Main\\ViewModels\\LoginViewModel.cs",
-              "ToolTip": "D:\\MyProjectCode\\MyToDo\\MyToDo.Main\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\ViewModels\\LoginViewModel.cs",
               "RelativeToolTip": "MyToDo.Main\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAywDcAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAnwFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-11T09:33:41.89Z",
               "EditorCaption": ""
