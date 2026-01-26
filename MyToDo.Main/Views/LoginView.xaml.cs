@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyToDo.Main.Core.Events;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,17 @@ namespace MyToDo.Main.Views
     /// </summary>
     public partial class LoginView : UserControl
     {
-        public LoginView()
+        private readonly IEventAggregator _eventAggregator;
+        public LoginView(IEventAggregator eventAggregator)
         {
+            _eventAggregator = eventAggregator;
             InitializeComponent();
+            _eventAggregator.GetEvent<MsgEvent>().Subscribe(ShowMsg);
+        }
+
+        private void ShowMsg(string obj)
+        {
+            TipBox.MessageQueue.Enqueue(obj);
         }
     }
 }

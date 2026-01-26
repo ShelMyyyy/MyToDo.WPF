@@ -79,3 +79,4 @@ D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\refint\MyToD
 D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\MyToDo.Main.pdb
 D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\MyToDo.Main.genruntimeconfig.cache
 D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\ref\MyToDo.Main.dll
+D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\Core\Resources\ImagesDictionary.baml

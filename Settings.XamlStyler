@@ -1,6 +1,6 @@
 {
     // ==========[属性格式化]==========
-    "AttributesTolerance": 2, // 单行最大属性数，2[默认]，如果元素属性数不大于此数就不会换行
+    "AttributesTolerance": 1, // 单行最大属性数，2[默认]，如果元素属性数不大于此数就不会换行
     "KeepFirstAttributeOnSameLine": false, // 第一个属性是否与开始标记在同一行，false[默认]
     "MaxAttributeCharactersPerLine": 10, // 多个属性大于多少个字符就该换行，0[默认]
     "MaxAttributesPerLine": 3, // 大于几个属性就该换行，1[默认]
@@ -46,7 +46,7 @@
     //
     // ==========[元素格式化]==========
     "PutEndingBracketOnNewLine": false, // 结束括号是否独占一行，false[默认]
-    "RemoveEndingTagOfEmptyElement": true, // 是否移除空元素的结束标签，true[默认]
+    "RemoveEndingTagOfEmptyElement": false, // 是否移除空元素的结束标签，true[默认]
     "SpaceBeforeClosingSlash": true, // 自闭合元素的末尾斜杠前是否要有空格，true[默认]
     "RootElementLineBreakRule": 0, // 是否将根元素的属性分成多行（0[默认]默认；1始终；2从不）
     //

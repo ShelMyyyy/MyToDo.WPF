@@ -16,13 +16,20 @@
             <ColumnDefinition Width="1.5*" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
+
+        <mt:Snackbar x:Name="TipBox"
+            Grid.ColumnSpan="2"
+            MessageQueue="{mt:MessageQueue}" />
         <Image Grid.Column="0"
             Margin="20"
             Source="/Core/Images/1.jpg" />
-        <mt:Transitioner Grid.Column="1" SelectedIndex="{Binding SelectedIndex}">
+        <mt:Transitioner Grid.Column="1"
+            SelectedIndex="{Binding SelectedIndex}">
             <!--  登录内容  -->
             <mt:TransitionerSlide>
-                <DockPanel Margin="15" VerticalAlignment="Center">
+                <DockPanel
+                    Margin="15"
+                    VerticalAlignment="Center">
                     <TextBlock
                         Text="欢迎使用"
                         Margin="0,10"
@@ -30,6 +37,7 @@
                         FontWeight="Bold"
                         FontSize="30" />
                     <TextBox
+                        Text="{Binding AccountName}"
                         Margin="0,10"
                         mt:HintAssist.Hint="请输入账号"
                         DockPanel.Dock="Top" />
@@ -50,7 +58,9 @@
                                 </i:EventTrigger>
                             </i:Interaction.Triggers>
                         </TextBlock>
-                        <TextBlock Text="忘记密码" HorizontalAlignment="Right" />
+                        <TextBlock
+                            Text="忘记密码"
+                            HorizontalAlignment="Right" />
                     </DockPanel>
                 </DockPanel>
             </mt:TransitionerSlide>

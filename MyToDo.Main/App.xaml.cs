@@ -1,4 +1,6 @@
-﻿using MyToDo.Main.Core.Tools;
+﻿using MyToDo.Main.Common.Service;
+using MyToDo.Main.Core.Interface;
+using MyToDo.Main.Core.Tools;
 using MyToDo.Main.ViewModels;
 using MyToDo.Main.Views;
 using System.Configuration;
@@ -27,11 +29,11 @@ namespace MyToDo.Main
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterDialog<LoginView,LoginViewModel>();
-            containerRegistry.GetContainer().Register<HttpClientTool>(made:Parameters.Of.Type<string>(serviceKey:"webUri"));
-
+            // 关键：注册IWindowOperations到你单独定义的WindowOperations类（单例）
+            containerRegistry.RegisterSingleton<IWindowOperations, WindowOperations>();
         }
 
-        protected override void OnInitialized()
+    /*    protected override void OnInitialized()
         {
             var dialog = Container.Resolve<IDialogService>();
             dialog.ShowDialog("LoginView", callback =>
@@ -43,7 +45,7 @@ namespace MyToDo.Main
                 }
             });
             base.OnInitialized();
-        }
+        }*/
     }
 
 }

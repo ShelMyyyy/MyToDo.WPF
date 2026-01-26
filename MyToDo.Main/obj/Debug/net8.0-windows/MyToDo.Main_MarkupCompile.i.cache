@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\App.xaml
-3399049591
+41172352239
 22-1689650447
-14870876503
+18590289332
 211-210590355
-Core\DictionaryResource.xaml;Views\LoginView.xaml;Views\MainWindowView.xaml;
+Core\DictionaryResource.xaml;Core\Resources\ImagesDictionary.xaml;Views\LoginView.xaml;Views\MainWindowView.xaml;
 
 True
 

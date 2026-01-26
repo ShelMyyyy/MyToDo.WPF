@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MyToDo.Main.Core.Interface;
+using MyToDo.Main.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +21,21 @@ namespace MyToDo.Main.Views
     /// </summary>
     public partial class MainWindowView : Window
     {
-        public MainWindowView()
+        private readonly IWindowOperations _windowOperations;
+
+        // 构造函数注入IWindowOperations实例
+        public MainWindowView(IWindowOperations windowOperations)
         {
             InitializeComponent();
+            _windowOperations = windowOperations;
+
+            // 关键：将当前窗口实例关联到WindowOperations类
+            _windowOperations.AttachWindow(this);
+        }
+
+        private void BtnMinimize_Click(object sender, RoutedEventArgs e)
+        {
+           //this.WindowState = WindowState.Minimized;
         }
     }
 }
