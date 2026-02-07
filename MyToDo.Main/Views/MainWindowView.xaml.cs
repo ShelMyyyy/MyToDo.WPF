@@ -37,5 +37,10 @@ namespace MyToDo.Main.Views
         {
            //this.WindowState = WindowState.Minimized;
         }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            drawerHost.IsLeftDrawerOpen=false;
+        }
     }
 }

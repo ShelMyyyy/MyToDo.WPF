@@ -3,19 +3,16 @@
   "WorkspaceRootPath": "D:\\MyProjectCode\\MyToDo\\MyToDo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|d:\\myprojectcode\\mytodo\\mytodo\\mytodo.main\\views\\mainwindowview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|solutionrelative:mytodo.main\\views\\mainwindowview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|d:\\myprojectcode\\mytodo\\mytodo\\mytodo.main\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|solutionrelative:mytodo.main\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|d:\\myprojectcode\\mytodo\\mytodo\\mytodo.main\\core\\model\\menuitemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|solutionrelative:mytodo.main\\core\\model\\menuitemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|d:\\myprojectcode\\mytodo\\mytodo\\mytodo.main\\views\\mainwindowview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|solutionrelative:mytodo.main\\views\\mainwindowview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\14120\\AppData\\Local\\Temp\\.vsdbgsrc\\07562dd9ba86a0a5fead5117dd68e3c724f52eea01f79d4441c442c042cad972\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|d:\\myprojectcode\\mytodo\\mytodo\\mytodo.main\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ECC8728-3CCD-47D0-9246-B7F38C576C48}|MyToDo.Main\\MyToDo.Main.csproj|solutionrelative:mytodo.main\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 173,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,48 +39,37 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MenuItemModel.cs",
-              "DocumentMoniker": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\Core\\Model\\MenuItemModel.cs",
-              "RelativeDocumentMoniker": "MyToDo.Main\\Core\\Model\\MenuItemModel.cs",
-              "ToolTip": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\Core\\Model\\MenuItemModel.cs",
-              "RelativeToolTip": "MyToDo.Main\\Core\\Model\\MenuItemModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\App.xaml.cs",
+              "RelativeDocumentMoniker": "MyToDo.Main\\App.xaml.cs",
+              "ToolTip": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\App.xaml.cs",
+              "RelativeToolTip": "MyToDo.Main\\App.xaml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAiwB8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T13:14:55.697Z",
+              "WhenOpened": "2026-02-07T06:27:26.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "XamlReader.cs",
-              "DocumentMoniker": "C:\\Users\\14120\\AppData\\Local\\Temp\\.vsdbgsrc\\07562dd9ba86a0a5fead5117dd68e3c724f52eea01f79d4441c442c042cad972\\XamlReader.cs",
-              "ToolTip": "C:\\Users\\14120\\AppData\\Local\\Temp\\.vsdbgsrc\\07562dd9ba86a0a5fead5117dd68e3c724f52eea01f79d4441c442c042cad972\\XamlReader.cs [\u53EA\u8BFB]",
-              "ViewState": "AgIAAH4BAAAAAAAAAAAAwIIBAAACAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-26T13:14:23.824Z",
-              "EditorCaption": " [\u53EA\u8BFB]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindowViewModel.cs",
               "DocumentMoniker": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\ViewModels\\MainWindowViewModel.cs",
               "RelativeDocumentMoniker": "MyToDo.Main\\ViewModels\\MainWindowViewModel.cs",
               "ToolTip": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\ViewModels\\MainWindowViewModel.cs",
               "RelativeToolTip": "MyToDo.Main\\ViewModels\\MainWindowViewModel.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAkwCkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwCQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-26T13:08:54.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindowView.xaml",
               "DocumentMoniker": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\Views\\MainWindowView.xaml",
               "RelativeDocumentMoniker": "MyToDo.Main\\Views\\MainWindowView.xaml",
-              "ToolTip": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\Views\\MainWindowView.xaml",
-              "RelativeToolTip": "MyToDo.Main\\Views\\MainWindowView.xaml",
+              "ToolTip": "D:\\MyProjectCode\\MyToDo\\MyToDo\\MyToDo.Main\\Views\\MainWindowView.xaml*",
+              "RelativeToolTip": "MyToDo.Main\\Views\\MainWindowView.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-01-24T13:12:46.123Z",
               "EditorCaption": ""

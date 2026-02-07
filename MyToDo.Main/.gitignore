@@ -1,0 +1,30 @@
+# Visual Studio 2017+ 缓存/生成文件
+.vs/
+# 生成的二进制文件
+bin/
+obj/
+# 调试文件
+*.pdb
+# 发布配置文件
+*.pubxml
+# 错误列表缓存
+ErrorListCache/
+# 本地配置文件（包含敏感信息，如数据库连接）
+appsettings.json
+appsettings.Development.json
+# 用户特定的 Visual Studio 设置
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+# 测试结果
+TestResults/
+# 构建日志
+BuildLog.htm
+# NuGet 包缓存（可选，如需保留可注释掉）
+# packages/
+# 临时文件
+*.tmp
+*.bak
+# 代码分析报告
+StyleCopReport.xml

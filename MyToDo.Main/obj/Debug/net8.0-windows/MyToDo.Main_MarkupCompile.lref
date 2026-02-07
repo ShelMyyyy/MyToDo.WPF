@@ -2,4 +2,8 @@
 FD:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\App.xaml;;
 FD:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\Views\LoginView.xaml;;
 FD:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\Views\MainWindowView.xaml;;
+FD:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\Views\LeftMenuViews\HomePageView.xaml;;
+FD:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\Views\LeftMenuViews\MemoView.xaml;;
+FD:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\Views\LeftMenuViews\ToDoView.xaml;;
+FD:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\Views\LeftMenuViews\SettingView.xaml;;
 

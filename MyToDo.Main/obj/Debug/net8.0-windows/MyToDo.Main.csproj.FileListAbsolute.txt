@@ -80,3 +80,11 @@ D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\MyToDo.Main.
 D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\MyToDo.Main.genruntimeconfig.cache
 D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\ref\MyToDo.Main.dll
 D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\Core\Resources\ImagesDictionary.baml
+D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\Views\LeftMenuViews\HomePageView.g.cs
+D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\Views\LeftMenuViews\HomePageView.baml
+D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\Views\LeftMenuViews\MemoView.g.cs
+D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\Views\LeftMenuViews\ToDoView.g.cs
+D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\Views\LeftMenuViews\MemoView.baml
+D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\Views\LeftMenuViews\ToDoView.baml
+D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\Views\LeftMenuViews\SettingView.g.cs
+D:\MyProjectCode\MyToDo\MyToDo\MyToDo.Main\obj\Debug\net8.0-windows\Views\LeftMenuViews\SettingView.baml
