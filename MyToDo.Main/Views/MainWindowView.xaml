@@ -13,6 +13,7 @@
     Width="800"
     Height="450"
     prism:ViewModelLocator.AutoWireViewModel="True"
+    Background="#2e2e2e"
     mc:Ignorable="d">
     <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="-1" />
@@ -101,7 +102,7 @@
                                 Foreground="{Binding RelativeSource={RelativeSource AncestorType={x:Type FrameworkElement}}, Path=(TextElement.Foreground)}"
                                 Style="{StaticResource MaterialDesignToolButton}"
                                 ToolTip="Next Item" />
-
+                            <!--  首页  -->
                             <Button
                                 Content="{materialDesign:PackIcon Kind=Home,
                                                                   Size=24}"

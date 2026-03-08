@@ -55,15 +55,21 @@ namespace MyToDo.Main.ViewModels
             }
             _journal.GoForward();
         }
-
+        /// <summary>
+        /// 导航到左侧菜单对应的页面
+        /// </summary>
+        /// <param name="model"></param>
         private void NavigationMenu(MenuItemModel model)
         {
             if (model == null)
             { 
                 return; 
             }
+            //表示把视图加载到名字是“MainViewRegion”的区域
+            //model.ViewName 要加载的视图名称
             _regionManager.RequestNavigate("MainViewRegion", model.ViewName, callback =>
             {
+                //记录导航历史
                 _journal = callback.Context.NavigationService.Journal;
             });
            
@@ -79,17 +85,23 @@ namespace MyToDo.Main.ViewModels
             LeftMenuItems.Add(new MenuItemModel { IconSource = resourceDict["MemoIcon"] as ImageSource, MenuName = "备忘录", ViewName = "MemoView" });
             LeftMenuItems.Add(new MenuItemModel { IconSource = resourceDict["SettingIcon"] as ImageSource, MenuName = "设置", ViewName = "SettingView" });
         }
-
+        /// <summary>
+        /// 关闭窗口
+        /// </summary>
         private void CloseWindow()
         {
             _windowOperations.Close();
         }
-
+        /// <summary>
+        /// 最大化窗口
+        /// </summary>
         private void MaximizeWindow()
         {
             _windowOperations.MaximizeOrRestore();
         }
-
+        /// <summary>
+        /// 最小化窗口
+        /// </summary>
         private void MinimizeWindow()
         {
             _windowOperations.Minimize();

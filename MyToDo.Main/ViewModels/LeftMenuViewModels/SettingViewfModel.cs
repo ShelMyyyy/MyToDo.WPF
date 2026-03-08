@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyToDo.Main.Core.Interface.ViewModel.LeftMenuViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace MyToDo.Main.ViewModels.LeftMenuViewModels
 {
-   public class SettingViewfModel
+   public class SettingViewfModel:ViewModelBase,ISettingViewfModel
     {
+
     }
 }
