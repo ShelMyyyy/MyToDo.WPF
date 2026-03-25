@@ -1,0 +1,257 @@
+﻿<UserControl
+    x:Class="MyToDo.Main.Views.LeftMenuViews.HomePageView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:MyToDo.Main.Views.LeftMenuViews"
+    xmlns:convert="clr-namespace:MyToDo.Main.Core.Convert"
+    d:DesignHeight="550"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <!--  定义转换器资源  -->
+        <convert:ResourceKeyToDrawingImageConverter x:Key="ResourceKeyToDrawingImageConverter" />
+
+        <!--  顶部卡片模板：使用相对尺寸（百分比）  -->
+        <DataTemplate x:Key="CardItemTemplate">
+            <Border
+                CornerRadius="8"
+                Background="{Binding Color}">
+                <Border.Style>
+                    <Style TargetType="Border">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect
+                                            ShadowDepth="0"
+                                            BlurRadius="20"
+                                            Opacity="0.8"
+                                            Color="Wheat" />
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Border.Style>
+                <Grid>
+                    <!--  用Star尺寸让内容占满卡片，避免固定尺寸  -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0"
+                        Height="30"
+                        Margin="20,0"
+                        HorizontalAlignment="Left"
+                        Source="{Binding IconKey, Converter={StaticResource ResourceKeyToDrawingImageConverter}}" />
+                    <TextBlock Grid.Row="1"
+                        Text="{Binding CardName}"
+                        Margin="20,0"
+                        HorizontalAlignment="Left"
+                        Foreground="White"
+                        FontSize="20"
+                        Opacity="0.9" />
+                    <TextBlock Grid.Row="2"
+                        Text="{Binding Value}"
+                        Margin="20,5"
+                        HorizontalAlignment="Left"
+                        Foreground="White"
+                        FontSize="28"
+                        FontWeight="Bold" />
+                </Grid>
+            </Border>
+        </DataTemplate>
+
+        <DataTemplate x:Key="TodoItemTemplate">
+            <Grid Margin="0,8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <CheckBox
+                    IsChecked="{Binding IsCompleted}"
+                    VerticalAlignment="Center" />
+                <StackPanel Grid.Column="1"
+                    Margin="12,0,0,0">
+                    <TextBlock
+                        Text="{Binding Title}"
+                        Foreground="White"
+                        FontSize="14"
+                        FontWeight="Medium" />
+                    <TextBlock
+                        Text="{Binding Description}"
+                        Margin="0,2,0,0"
+                        Foreground="#AAAAAA"
+                        FontSize="11" />
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="MemoItemTemplate">
+            <StackPanel Margin="0,12">
+                <TextBlock
+                    Text="{Binding Title}"
+                    Foreground="White"
+                    FontSize="14"
+                    FontWeight="Medium" />
+                <TextBlock
+                    Text="{Binding Time}"
+                    Margin="0,2,0,0"
+                    Foreground="#AAAAAA"
+                    FontSize="11" />
+            </StackPanel>
+        </DataTemplate>
+
+
+        <Style
+            x:Key="NoPaddingListBoxStyle"
+            TargetType="ListBox">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Padding" Value="0" />
+            <!--  移除ListBox默认的内边距  -->
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="VerticalContentAlignment" Value="Stretch" />
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <!--  顶部信息栏：固定高度（60px），不随比例压缩  -->
+            <RowDefinition Height="60" />
+            <!--  主内容区：占剩余高度  -->
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--  顶部信息栏  -->
+        <Border
+            Padding="16"
+            Background="Transparent">
+            <TextBlock
+                Text="你好，2024年3月3日星期日"
+                Foreground="White"
+                FontSize="20"
+                FontWeight="Bold" />
+        </Border>
+
+        <!--  主内容区  -->
+        <Grid Grid.Row="1"
+            Margin="5">
+            <Grid.RowDefinitions>
+                <!--  卡片区域：固定最小高度（120px）+ 比例，避免被压缩  -->
+                <RowDefinition Height="140" />
+                <!--  下方内容区：占剩余高度  -->
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!--  顶部卡片列表：应用自定义样式，移除默认内边距  -->
+            <ListBox
+                ItemsSource="{Binding CardItems}"
+                ItemTemplate="{StaticResource CardItemTemplate}"
+                Style="{StaticResource NoPaddingListBoxStyle}"
+                ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <!--  UniformGrid：增加最小行高，保证卡片高度  -->
+                        <UniformGrid
+                            MinHeight="110"
+                            Columns="4"
+                            Rows="1" />
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+            </ListBox>
+
+            <!--  下方内容区  -->
+            <Grid Grid.Row="1"
+                Margin="0,16,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!--  左侧：待办事项  -->
+                <Border Grid.Column="0"
+                    Margin="0,0,8,0"
+                    Background="#444444"
+                    CornerRadius="8">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <StackPanel
+                            Margin="16,12"
+                            Orientation="Horizontal">
+                            <TextBlock
+                                Text="待办事项"
+                                Foreground="White"
+                                FontSize="18"
+                                FontWeight="Bold" />
+                            <Button
+                                Content="+"
+                                Command="{Binding AddTodoCommand}"
+                                Width="24"
+                                Height="24"
+                                Margin="8,0,0,0"
+                                Padding="0"
+                                HorizontalAlignment="Right"
+                                Background="#4CAF50"
+                                Foreground="White" />
+                        </StackPanel>
+
+                        <ListBox Grid.Row="1"
+                            Margin="16,0"
+                            ItemsSource="{Binding TodoItems}"
+                            ItemTemplate="{StaticResource TodoItemTemplate}"
+                            Style="{StaticResource NoPaddingListBoxStyle}" />
+                    </Grid>
+                </Border>
+
+                <!--  右侧：备忘录  -->
+                <Border Grid.Column="1"
+                    Margin="8,0,0,0"
+                    Background="#444444"
+                    CornerRadius="8">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <StackPanel
+                            Margin="16,12"
+                            Orientation="Horizontal">
+                            <TextBlock
+                                Text="备忘录"
+                                Foreground="White"
+                                FontSize="18"
+                                FontWeight="Bold" />
+                            <Button
+                                Content="+"
+                                Command="{Binding AddMemoCommand}"
+                                Width="24"
+                                Height="24"
+                                Margin="8,0,0,0"
+                                Padding="0"
+                                HorizontalAlignment="Right"
+                                Background="#FF9800"
+                                Foreground="White" />
+                        </StackPanel>
+
+                        <ListBox Grid.Row="1"
+                            Margin="16,0"
+                            ItemsSource="{Binding MemoItems}"
+                            ItemTemplate="{StaticResource MemoItemTemplate}"
+                            Style="{StaticResource NoPaddingListBoxStyle}" />
+                    </Grid>
+                </Border>
+            </Grid>
+        </Grid>
+    </Grid>
+
+</UserControl>
