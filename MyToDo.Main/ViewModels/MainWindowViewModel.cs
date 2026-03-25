@@ -1,11 +1,12 @@
 ﻿using MyToDo.Main.Core.Interface;
+using MyToDo.Main.Core.Interface.ViewModel;
 using MyToDo.Main.Core.Model;
 using System.Windows;
 using System.Windows.Media;
 
 namespace MyToDo.Main.ViewModels
 {
-    public class MainWindowViewModel : ViewModelBase
+    public class MainWindowViewModel : ViewModelBase, IMainWindowViewModel
     {
 
 
@@ -27,12 +28,7 @@ namespace MyToDo.Main.ViewModels
         {
             _windowOperations = windowOperations;
             _regionManager = regionManager;
-            MinimizeWindowCommand = new DelegateCommand(MinimizeWindow);
-            MaximizeWindowCommand = new DelegateCommand(MaximizeWindow);
-            CloseWindowCommand = new DelegateCommand(CloseWindow);
-            NavigationMenuCommond = new DelegateCommand<MenuItemModel>(NavigationMenu);
-            GoBackCommand = new DelegateCommand(GoBack);
-            GoForWardCommand = new DelegateCommand(GoForWard);
+            InitializeCommand();
 
             CreateMenuList();
         }
@@ -105,6 +101,18 @@ namespace MyToDo.Main.ViewModels
         private void MinimizeWindow()
         {
             _windowOperations.Minimize();
+        }
+        /// <summary>
+        /// 初始化命令
+        /// </summary>
+        private void InitializeCommand()
+        {
+            MinimizeWindowCommand = new DelegateCommand(MinimizeWindow);
+            MaximizeWindowCommand = new DelegateCommand(MaximizeWindow);
+            CloseWindowCommand = new DelegateCommand(CloseWindow);
+            NavigationMenuCommond = new DelegateCommand<MenuItemModel>(NavigationMenu);
+            GoBackCommand = new DelegateCommand(GoBack);
+            GoForWardCommand = new DelegateCommand(GoForWard);
         }
 
         #region Command
