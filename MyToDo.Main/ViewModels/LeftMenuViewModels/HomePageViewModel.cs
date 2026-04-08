@@ -20,6 +20,14 @@ namespace MyToDo.Main.ViewModels.LeftMenuViewModels
             get => cardItems;
             set => SetProperty(ref cardItems, value);
         }
+
+        private ObservableCollection<TodoItemModel> todoItems;
+
+        public ObservableCollection<TodoItemModel> TodoItems
+        {
+            get => todoItems;
+            set => SetProperty(ref todoItems, value);
+        }
         #endregion
 
 
@@ -31,6 +39,7 @@ namespace MyToDo.Main.ViewModels.LeftMenuViewModels
         private void Initialize()
         {
             CreateCardItems();
+            CreateTodoItems();
         }
         /// <summary>
         /// 卡片项
@@ -44,6 +53,13 @@ namespace MyToDo.Main.ViewModels.LeftMenuViewModels
             CardItems.Add(new CardItemModel() { CardName = "备忘录", Value = "9", Color = "#fda100", IconKey = "ToDoIcon" });
         }
 
+        public void CreateTodoItems()
+        {
+            TodoItems = new ObservableCollection<TodoItemModel>();
+            TodoItems.Add(new TodoItemModel() { Title = "项目1", Description = "今天要完成一个项目", IsCompleted = false, CreateTime = DateTime.Now });
+            TodoItems.Add(new TodoItemModel() { Title = "项目2", Description = "今天要完成一个项目", IsCompleted = false, CreateTime = DateTime.Now });
+            TodoItems.Add(new TodoItemModel() { Title = "项目3", Description = "今天要完成一个项目", IsCompleted = false, CreateTime = DateTime.Now });           
+        }
 
         #region Command
         /// <summary>

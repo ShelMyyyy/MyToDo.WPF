@@ -10,8 +10,8 @@
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
     Title="MainWindowView"
-    Width="800"
-    Height="450"
+    Width="870"
+    Height="650"
     prism:ViewModelLocator.AutoWireViewModel="True"
     Background="#2e2e2e"
     mc:Ignorable="d">

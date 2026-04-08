@@ -66,16 +66,10 @@
         </DataTemplate>
 
         <DataTemplate x:Key="TodoItemTemplate">
-            <Grid Margin="0,8">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <CheckBox
-                    IsChecked="{Binding IsCompleted}"
-                    VerticalAlignment="Center" />
-                <StackPanel Grid.Column="1"
-                    Margin="12,0,0,0">
+            <DockPanel LastChildFill="False">
+                <StackPanel Grid.Column="0"
+                    Margin="12,0,0,0"
+                    DockPanel.Dock="Left">
                     <TextBlock
                         Text="{Binding Title}"
                         Foreground="White"
@@ -83,26 +77,33 @@
                         FontWeight="Medium" />
                     <TextBlock
                         Text="{Binding Description}"
+                        Margin="0,5,0,0"
+                        Foreground="#AAAAAA"
+                        FontSize="11" />
+                </StackPanel>
+                <ToggleButton Grid.Column="1"
+                    DockPanel.Dock="Right" />
+            </DockPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="MemoItemTemplate">
+            <DockPanel>
+                <StackPanel
+                    Margin="0,12"
+                    DockPanel.Dock="Left">
+                    <TextBlock
+                        Text="{Binding Title}"
+                        Foreground="White"
+                        FontSize="14"
+                        FontWeight="Medium" />
+                    <TextBlock
+                        Text="{Binding Time}"
                         Margin="0,2,0,0"
                         Foreground="#AAAAAA"
                         FontSize="11" />
                 </StackPanel>
-            </Grid>
-        </DataTemplate>
+            </DockPanel>
 
-        <DataTemplate x:Key="MemoItemTemplate">
-            <StackPanel Margin="0,12">
-                <TextBlock
-                    Text="{Binding Title}"
-                    Foreground="White"
-                    FontSize="14"
-                    FontWeight="Medium" />
-                <TextBlock
-                    Text="{Binding Time}"
-                    Margin="0,2,0,0"
-                    Foreground="#AAAAAA"
-                    FontSize="11" />
-            </StackPanel>
         </DataTemplate>
 
 
